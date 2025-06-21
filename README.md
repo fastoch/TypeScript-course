@@ -2,7 +2,8 @@ src = https://www.youtube.com/watch?v=SpwzRDUQ1GI
 
 # Intro
 
-This course gives you an understanding of the fundamentals of TS and why it's so useful.
+This course gives you an understanding of the fundamentals of TS and why it's so useful.  
+instructor = Bob Ziroll
 
 ## Reasons to use TS
 
@@ -25,8 +26,11 @@ This course gives you an understanding of the fundamentals of TS and why it's so
 
 ## Pizza App
 
+no HTML or anything else, just a very simple console-based application  
+- start by writing in JS, then refactor to TS
+- the initial file is `index.js`
 
 
 
 ---
-@7/126
+@12/126
