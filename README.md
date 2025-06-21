@@ -23,6 +23,10 @@ This course gives you an understanding of the fundamentals of TS and why it's so
 - built-in utility types
 - generics: allow you to create your own utility types, or to make your functions and other types more flexible
 
+## Pizza App
+
+
+
 
 ---
-@5/126
+@7/126
