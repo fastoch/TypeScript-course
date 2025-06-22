@@ -20,7 +20,7 @@ type Order = {
 
 let cashInRegister = 100
 let nextOrderId = 1
-const orderQueue: {id: number, pizza: Pizza, status: string}[] = []
+const orderQueue: Order[] = []
 
 // utility function that takes a pizza object and adds it to the menu
 const addNewPizza = (pizza: Pizza) => {
