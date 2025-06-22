@@ -12,12 +12,16 @@ let nextOrderId = 1
 const orderQueue = []
 
 // utility function that takes a pizza object and adds it to the menu
-const addNewPizza = (pizzaObj) => {
+const addNewPizza = (pizzaObj: {name: string, price: number}) => {
   menu.push(pizzaObj)
 }
 
 const placeOrder = (pizzaName) => {
   const selectedPizza = menu.find(pizzaObj => pizzaObj.name === pizzaName)
+  if(!selectedPizza) {
+    console.error(`${pizzaName} is not on the menu`)
+    return  // exit the function early if the pizza is not on the menu
+  }
   cashInRegister += selectedPizza.price
   const newOrder = {
     id: nextOrderId++,

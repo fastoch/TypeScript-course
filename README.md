@@ -28,7 +28,7 @@ instructor = Bob Ziroll
 
 no HTML or anything else, just a very simple console-based application  
 - start by writing in JS, then refactor to TS
-- the initial file is `index.js`
+- the initial file is named `index.js`
 
 ## Moving to TS
 
@@ -37,4 +37,4 @@ Let's rename our `index.js` into `index.ts`.
 
 
 ---
-@18/126
+@25/126
