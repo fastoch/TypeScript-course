@@ -41,8 +41,28 @@ Let's rename our `index.js` into `index.ts`.
 - `number`
 - `boolean`
 
+# Custom type
+
+```ts
+type Pizza = {
+  topping: string,
+  size: string
+  price: number
+}
+```
+
+# Optional properties
+
+```ts
+type Pizza = {
+  topping: string,
+  size: string
+  price: number
+  extraCheese?: boolean
+}
+```
 
 
 
 ---
-@43/126
+@45/126
