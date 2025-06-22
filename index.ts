@@ -7,9 +7,14 @@ const menu = [
   {name: "Chicken BBQ", price: 14},
 ]
 
+interface pizzaObj {
+  name: string,
+  price: number
+}
+
 let cashInRegister = 100
 let nextOrderId = 1
-const orderQueue = []
+const orderQueue: {id: number, pizza: pizzaObj, status: string}[] = []
 
 // utility function that takes a pizza object and adds it to the menu
 const addNewPizza = (pizzaObj: {name: string, price: number}) => {
@@ -32,7 +37,7 @@ const placeOrder = (pizzaName) => {
   return newOrder
 }
 
-const completeOrder = (orderId) => {
+const completeOrder = (orderId: number) => {
   const order = orderQueue.find(order => order.id === orderId)
   order.status = "completed"
   return order
