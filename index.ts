@@ -7,7 +7,7 @@ const menu = [
   {name: "Chicken BBQ", price: 14},
 ]
 
-interface pizzaObj {
+type pizzaObj = {
   name: string,
   price: number
 }
