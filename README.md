@@ -65,9 +65,12 @@ type Pizza = {
 ```
 
 The `?` makes the property optional, which can be very convenient. However, it comes with some **caveat**.  
-Indeed, if you try to access the `extraCheese` property from a Pizza object that doesn't have it, you'll get an error.  
+Indeed, if you try to access the `extraCheese` property from an object that doesn't have it, you'll get an error.  
 TS will be happy with your code, but the runtime will throw an error.  
+So keep in mind that making a property optional can reduce your type safety.  
+
+
 
 
 ---
-@45/126
+@46/126
