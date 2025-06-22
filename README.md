@@ -29,10 +29,12 @@ instructor = Bob Ziroll
 no HTML or anything else, just a very simple console-based application  
 - start by writing in JS, then refactor to TS
 - the initial file is named `index.js`
+- it runs well when executed in the terminal via `node index.js`
+- however, TS will show us why our code is prone to errors and not very robust
 
 # Moving to TS
 
-Let's rename our `index.js` into `index.ts`.  
+Let's rename our `index.js` into `index.ts`, and see how many red squigglies we get with a functional JS code.  
 
 
 # Primitive Data Types
@@ -62,6 +64,9 @@ type Pizza = {
 }
 ```
 
+The `?` makes the property optional, which can be very convenient. However, it comes with some **caveat**.  
+Indeed, if you try to access the `extraCheese` property from a Pizza object that doesn't have it, you'll get an error.  
+TS will be happy with your code, but the runtime will throw an error.  
 
 
 ---
