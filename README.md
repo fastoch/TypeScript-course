@@ -69,8 +69,13 @@ Indeed, if you try to access the `extraCheese` property from an object that does
 TS will be happy with your code, but the runtime will throw an error.  
 So keep in mind that making a property optional can reduce your type safety.  
 
+## Typing Arrays
+
+`Pizza[]` is the type for an array of pizzas.  
+We can also use `Array<Pizza>` to achieve the same result, which is more relevant when using generics.  
+
 
 
 
 ---
-@48/126
+@52/126
