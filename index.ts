@@ -47,8 +47,9 @@ const completeOrder = (orderId: number) => {
   const order = orderQueue.find(order => order.id === orderId)
   if(!order) {
     console.error(`Order #${orderId} not found`)
-    return
+    return  // exit the function if no order is found
   }
+  // else, update the order status and return the order
   order.status = "completed"
   return order
 }

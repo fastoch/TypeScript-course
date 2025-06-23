@@ -53,6 +53,16 @@ type Pizza = {
 }
 ```
 
+# Possibly undefined 
+
+An if statement can be used to get rid of a "possibly undefined" TS error:
+```ts
+if(!selectedPizza) {
+    console.error(`${pizzaName} is not on the menu`)
+    return  // exit the function early if the pizza is not on the menu
+}
+```
+
 # Optional properties
 
 ```ts
