@@ -29,6 +29,7 @@ const addNewPizza = (pizza: Pizza) => {
 
 const placeOrder = (pizzaName: string) => {
   const selectedPizza = menu.find(pizza => pizza.name === pizzaName)
+  // handle the case where selectedPizza is undefined
   if(!selectedPizza) {
     console.error(`${pizzaName} is not on the menu`)
     return  // exit the function early if the pizza is not on the menu
@@ -45,6 +46,7 @@ const placeOrder = (pizzaName: string) => {
 
 const completeOrder = (orderId: number) => {
   const order = orderQueue.find(order => order.id === orderId)
+  // handle the case where order is undefined
   if(!order) {
     console.error(`Order #${orderId} not found`)
     return  // exit the function if no order is found
